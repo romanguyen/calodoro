@@ -1,0 +1,48 @@
+name: Calodoro
+options:
+  bundleIdPrefix: com.calodoro
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    CODE_SIGN_STYLE: Automatic
+targets:
+  Calodoro:
+    type: application
+    platform: macOS
+    sources:
+      - Calodoro
+    info:
+      path: Calodoro/Info.plist
+      properties:
+        CFBundleDisplayName: Calodoro
+        CFBundleName: Calodoro
+        CFBundleIdentifier: com.calodoro.app
+        LSUIElement: true
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: false
+        GOOGLE_CLIENT_ID: 749381482956-8jq9jvb0g11lig9f803ipaoevorumhtk.apps.googleusercontent.com
+        GOOGLE_REDIRECT_SCHEME: com.googleusercontent.apps.749381482956-8jq9jvb0g11lig9f803ipaoevorumhtk
+        CFBundleURLTypes:
+          - CFBundleURLSchemes:
+              - com.googleusercontent.apps.749381482956-8jq9jvb0g11lig9f803ipaoevorumhtk
+    entitlements:
+      path: Calodoro/Calodoro.entitlements
+    dependencies: []
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.calodoro.app
+        DEVELOPMENT_ASSET_PATHS: ""
+        SWIFT_STRICT_CONCURRENCY: complete
+        ENABLE_HARDENED_RUNTIME: YES
+        INFOPLIST_FILE: Calodoro/Info.plist
+  CalodoroTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/CalodoroTests
+    info:
+      path: Tests/CalodoroTests/Info.plist
+    dependencies:
+      - target: Calodoro

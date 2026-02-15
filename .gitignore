@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Xcode
+DerivedData/
+build/
+*.xcuserstate
+*.xcuserdata/
+*.moved-aside
+*.xcuserdatad
+*.xccheckout
+*.xcscmblueprint
+
+# SwiftPM
+.swiftpm/
+
+# IDEs
+.idea/
+*.swp

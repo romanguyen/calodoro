@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		003BCAA1A6AA8BEECCEC1DAC /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B57A1605F07D99DA10312C3 /* CalendarEvent.swift */; };
+		149485B9073C150EDDFD9050 /* MenuBarLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FB10262F3C48D9591C8EF24 /* MenuBarLabelView.swift */; };
+		1EF1531338963739DEAA495D /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8926046BFB8FC709E875643C /* CalendarViewModel.swift */; };
+		2358818FBFFC93CBFBED41CB /* GoogleCalendarClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E2427093F26C95DC2B3C17 /* GoogleCalendarClient.swift */; };
+		2B43B362B6BC09DB3AD3F26C /* TimerMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85218F3699B309734C8BEC /* TimerMode.swift */; };
+		2CE56226CDF7E27C80ED9BDF /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFA58E761CDF240041F91D5 /* MenuBarView.swift */; };
+		3265A61C69F5B84D38E83BF8 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C36C6488BC5F5F3E0FD88E /* TaskViewModel.swift */; };
+		4F8DC60DAED9A9DF16D466B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 614AC5859C756D95F3D5BBDE /* Assets.xcassets */; };
+		62928CD3FD550DE470C67C05 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183640B663528B37691EE95E /* TimerViewModel.swift */; };
+		64F5579C6A6E1214E354BE03 /* TaskInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9AC49377EC909B5DA55290 /* TaskInputView.swift */; };
+		67BC3829D465DBF0822362FA /* TimerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC270E652455E0CDDEA6303 /* TimerService.swift */; };
+		6FD215E673463887AADEE725 /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CBC56642D59CA0527F3F71 /* PreferencesView.swift */; };
+		76DD29F4F95A43BAC16C074B /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079171319EBEFC460B886673 /* GoogleAuthService.swift */; };
+		84198CCDEDE363595C7AB3A5 /* TimerPhase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E445A4A2AA68748CC19B32D /* TimerPhase.swift */; };
+		8E43039FE2CD8C574E48D0C3 /* TimeFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72D9D92489EE32E3E048540 /* TimeFormatterTests.swift */; };
+		8EE07E7DCFF9DF29183970AA /* KeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA26B12889C1CC3A2CE6047 /* KeychainStore.swift */; };
+		9F0496B2D623FE818F14A8B6 /* PreferencesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86252E2C2C0FA1B6DBD9226B /* PreferencesStore.swift */; };
+		A159F7328302F4A7214C301B /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B563C0B628465FB74C1995 /* AppEnvironment.swift */; };
+		B0AEF0571785781B517BE3CC /* TokenStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0289B767B237D4D2200DA991 /* TokenStore.swift */; };
+		B3DADC6BAE9B72456CD3997E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65313060FA2FF8A5AB2F70E5 /* String+Extensions.swift */; };
+		B88FFFB5D3A562401180EF1F /* EventPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151AB537FF56BB3306FA8C88 /* EventPickerView.swift */; };
+		CFA28B82DDEE621488D08019 /* TimerState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606E9E1A08919038653CD06 /* TimerState.swift */; };
+		D181473274F4B4071015C4B4 /* CalendarEventSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEF46BC2BD4974898A6BFC /* CalendarEventSummary.swift */; };
+		DBE221B72628FED3C096BB68 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF59671BDC98198BB79C9484 /* NotificationService.swift */; };
+		E966A57A7C5473A26901E2EE /* TimeFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423D45223CA14E34FC84C56 /* TimeFormatter.swift */; };
+		E9CA3A6CD56C2ECBEB31C1E8 /* PomodoroSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA96AA3937C3A2AAD3835DB /* PomodoroSession.swift */; };
+		F0F85B99BE23B98586F968F2 /* CalodoroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489915A70F1E900F0A300ECB /* CalodoroApp.swift */; };
+		FD8035D0C84BCD5E6B29FF6D /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CCE9F6882429445976CA21 /* TaskItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E86D4836179A5FD48540C43C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9D058EC2810656B5BA92D93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C3FC79D5CC53D877A82AFFB;
+			remoteInfo = Calodoro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0289B767B237D4D2200DA991 /* TokenStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenStore.swift; sourceTree = "<group>"; };
+		079171319EBEFC460B886673 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
+		0FB10262F3C48D9591C8EF24 /* MenuBarLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarLabelView.swift; sourceTree = "<group>"; };
+		1423D45223CA14E34FC84C56 /* TimeFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatter.swift; sourceTree = "<group>"; };
+		151AB537FF56BB3306FA8C88 /* EventPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPickerView.swift; sourceTree = "<group>"; };
+		183640B663528B37691EE95E /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
+		24B563C0B628465FB74C1995 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		2C9AC49377EC909B5DA55290 /* TaskInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInputView.swift; sourceTree = "<group>"; };
+		365508F9F2C93C7DA7AAA8E8 /* Calodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CC270E652455E0CDDEA6303 /* TimerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerService.swift; sourceTree = "<group>"; };
+		42A8B79AEE89933AA1E5A895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		489915A70F1E900F0A300ECB /* CalodoroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalodoroApp.swift; sourceTree = "<group>"; };
+		4AE09442708357D7D6AA62CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4BA96AA3937C3A2AAD3835DB /* PomodoroSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroSession.swift; sourceTree = "<group>"; };
+		4E445A4A2AA68748CC19B32D /* TimerPhase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPhase.swift; sourceTree = "<group>"; };
+		4E85218F3699B309734C8BEC /* TimerMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMode.swift; sourceTree = "<group>"; };
+		53AB9DAC9B217459AD51A159 /* CalodoroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalodoroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BFA58E761CDF240041F91D5 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		614AC5859C756D95F3D5BBDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65313060FA2FF8A5AB2F70E5 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		86252E2C2C0FA1B6DBD9226B /* PreferencesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesStore.swift; sourceTree = "<group>"; };
+		8926046BFB8FC709E875643C /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		8B57A1605F07D99DA10312C3 /* CalendarEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
+		A72D9D92489EE32E3E048540 /* TimeFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatterTests.swift; sourceTree = "<group>"; };
+		AF59671BDC98198BB79C9484 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		B4DEF46BC2BD4974898A6BFC /* CalendarEventSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarEventSummary.swift; sourceTree = "<group>"; };
+		B8E2427093F26C95DC2B3C17 /* GoogleCalendarClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCalendarClient.swift; sourceTree = "<group>"; };
+		D35E8FEF32EEC306DF6C50B5 /* Calodoro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Calodoro.entitlements; sourceTree = "<group>"; };
+		D9CCE9F6882429445976CA21 /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		E0C36C6488BC5F5F3E0FD88E /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		E606E9E1A08919038653CD06 /* TimerState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerState.swift; sourceTree = "<group>"; };
+		F5CBC56642D59CA0527F3F71 /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		FCA26B12889C1CC3A2CE6047 /* KeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0D750C515B88F1AE90851290 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				8926046BFB8FC709E875643C /* CalendarViewModel.swift */,
+				151AB537FF56BB3306FA8C88 /* EventPickerView.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		1B982AA28BC02350E66C1177 /* GoogleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				079171319EBEFC460B886673 /* GoogleAuthService.swift */,
+				B8E2427093F26C95DC2B3C17 /* GoogleCalendarClient.swift */,
+				FCA26B12889C1CC3A2CE6047 /* KeychainStore.swift */,
+				0289B767B237D4D2200DA991 /* TokenStore.swift */,
+			);
+			path = GoogleCalendar;
+			sourceTree = "<group>";
+		};
+		312D63E0182462801923AC13 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				AF59671BDC98198BB79C9484 /* NotificationService.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		34393C82402DD0313567848D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				24B563C0B628465FB74C1995 /* AppEnvironment.swift */,
+				489915A70F1E900F0A300ECB /* CalodoroApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4AF42B559E256493CC1B5B22 /* CalodoroTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE09442708357D7D6AA62CA /* Info.plist */,
+				A72D9D92489EE32E3E048540 /* TimeFormatterTests.swift */,
+			);
+			name = CalodoroTests;
+			path = Tests/CalodoroTests;
+			sourceTree = "<group>";
+		};
+		4C912610F9ED99D50B08A197 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0D750C515B88F1AE90851290 /* Calendar */,
+				E26BA94990946E1AF3DCFBB8 /* Tasks */,
+				624954F3AF0329AE4F791E62 /* Timer */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		624954F3AF0329AE4F791E62 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				4E85218F3699B309734C8BEC /* TimerMode.swift */,
+				4E445A4A2AA68748CC19B32D /* TimerPhase.swift */,
+				3CC270E652455E0CDDEA6303 /* TimerService.swift */,
+				E606E9E1A08919038653CD06 /* TimerState.swift */,
+				183640B663528B37691EE95E /* TimerViewModel.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		88C6D3A954E8CBE98359C2D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B57A1605F07D99DA10312C3 /* CalendarEvent.swift */,
+				B4DEF46BC2BD4974898A6BFC /* CalendarEventSummary.swift */,
+				4BA96AA3937C3A2AAD3835DB /* PomodoroSession.swift */,
+				D9CCE9F6882429445976CA21 /* TaskItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8907C4E6A7A31B929D74F5FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1B982AA28BC02350E66C1177 /* GoogleCalendar */,
+				312D63E0182462801923AC13 /* Notifications */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		98CDA710067E01BE34FE6F36 /* Calodoro */ = {
+			isa = PBXGroup;
+			children = (
+				614AC5859C756D95F3D5BBDE /* Assets.xcassets */,
+				D35E8FEF32EEC306DF6C50B5 /* Calodoro.entitlements */,
+				42A8B79AEE89933AA1E5A895 /* Info.plist */,
+				34393C82402DD0313567848D /* App */,
+				4C912610F9ED99D50B08A197 /* Features */,
+				9E021A9D55BBB8232DB5764F /* MenuBar */,
+				88C6D3A954E8CBE98359C2D4 /* Models */,
+				C8506C3ADB32207A2DC57ADB /* Preferences */,
+				8907C4E6A7A31B929D74F5FE /* Services */,
+				EAE9B457E3AB404AE7350960 /* Utilities */,
+			);
+			path = Calodoro;
+			sourceTree = "<group>";
+		};
+		9E021A9D55BBB8232DB5764F /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				0FB10262F3C48D9591C8EF24 /* MenuBarLabelView.swift */,
+				5BFA58E761CDF240041F91D5 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		A2B16401217CC86944EE1609 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				365508F9F2C93C7DA7AAA8E8 /* Calodoro.app */,
+				53AB9DAC9B217459AD51A159 /* CalodoroTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8506C3ADB32207A2DC57ADB /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				86252E2C2C0FA1B6DBD9226B /* PreferencesStore.swift */,
+				F5CBC56642D59CA0527F3F71 /* PreferencesView.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		D55080DA6E3CC8F125406CBA = {
+			isa = PBXGroup;
+			children = (
+				98CDA710067E01BE34FE6F36 /* Calodoro */,
+				4AF42B559E256493CC1B5B22 /* CalodoroTests */,
+				A2B16401217CC86944EE1609 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E26BA94990946E1AF3DCFBB8 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				2C9AC49377EC909B5DA55290 /* TaskInputView.swift */,
+				E0C36C6488BC5F5F3E0FD88E /* TaskViewModel.swift */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		EAE9B457E3AB404AE7350960 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				65313060FA2FF8A5AB2F70E5 /* String+Extensions.swift */,
+				1423D45223CA14E34FC84C56 /* TimeFormatter.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		38559BE44228778969D2C104 /* CalodoroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8951D653C07093D3A8F68774 /* Build configuration list for PBXNativeTarget "CalodoroTests" */;
+			buildPhases = (
+				CF2C95CBDD0EBDF7DE33B260 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8F5C54B50926F34FACE5086 /* PBXTargetDependency */,
+			);
+			name = CalodoroTests;
+			packageProductDependencies = (
+			);
+			productName = CalodoroTests;
+			productReference = 53AB9DAC9B217459AD51A159 /* CalodoroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C3FC79D5CC53D877A82AFFB /* Calodoro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7131575AE928989106325E /* Build configuration list for PBXNativeTarget "Calodoro" */;
+			buildPhases = (
+				B74A6110C40A615102BFA23E /* Sources */,
+				E8A0492A10FC1F605B8526F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calodoro;
+			packageProductDependencies = (
+			);
+			productName = Calodoro;
+			productReference = 365508F9F2C93C7DA7AAA8E8 /* Calodoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9D058EC2810656B5BA92D93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					38559BE44228778969D2C104 = {
+						ProvisioningStyle = Automatic;
+					};
+					4C3FC79D5CC53D877A82AFFB = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 66B8476D2716EFC5905FAC5B /* Build configuration list for PBXProject "Calodoro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D55080DA6E3CC8F125406CBA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C3FC79D5CC53D877A82AFFB /* Calodoro */,
+				38559BE44228778969D2C104 /* CalodoroTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8A0492A10FC1F605B8526F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8DC60DAED9A9DF16D466B7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B74A6110C40A615102BFA23E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A159F7328302F4A7214C301B /* AppEnvironment.swift in Sources */,
+				003BCAA1A6AA8BEECCEC1DAC /* CalendarEvent.swift in Sources */,
+				D181473274F4B4071015C4B4 /* CalendarEventSummary.swift in Sources */,
+				1EF1531338963739DEAA495D /* CalendarViewModel.swift in Sources */,
+				F0F85B99BE23B98586F968F2 /* CalodoroApp.swift in Sources */,
+				B88FFFB5D3A562401180EF1F /* EventPickerView.swift in Sources */,
+				76DD29F4F95A43BAC16C074B /* GoogleAuthService.swift in Sources */,
+				2358818FBFFC93CBFBED41CB /* GoogleCalendarClient.swift in Sources */,
+				8EE07E7DCFF9DF29183970AA /* KeychainStore.swift in Sources */,
+				149485B9073C150EDDFD9050 /* MenuBarLabelView.swift in Sources */,
+				2CE56226CDF7E27C80ED9BDF /* MenuBarView.swift in Sources */,
+				DBE221B72628FED3C096BB68 /* NotificationService.swift in Sources */,
+				E9CA3A6CD56C2ECBEB31C1E8 /* PomodoroSession.swift in Sources */,
+				9F0496B2D623FE818F14A8B6 /* PreferencesStore.swift in Sources */,
+				6FD215E673463887AADEE725 /* PreferencesView.swift in Sources */,
+				B3DADC6BAE9B72456CD3997E /* String+Extensions.swift in Sources */,
+				64F5579C6A6E1214E354BE03 /* TaskInputView.swift in Sources */,
+				FD8035D0C84BCD5E6B29FF6D /* TaskItem.swift in Sources */,
+				3265A61C69F5B84D38E83BF8 /* TaskViewModel.swift in Sources */,
+				E966A57A7C5473A26901E2EE /* TimeFormatter.swift in Sources */,
+				2B43B362B6BC09DB3AD3F26C /* TimerMode.swift in Sources */,
+				84198CCDEDE363595C7AB3A5 /* TimerPhase.swift in Sources */,
+				67BC3829D465DBF0822362FA /* TimerService.swift in Sources */,
+				CFA28B82DDEE621488D08019 /* TimerState.swift in Sources */,
+				62928CD3FD550DE470C67C05 /* TimerViewModel.swift in Sources */,
+				B0AEF0571785781B517BE3CC /* TokenStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2C95CBDD0EBDF7DE33B260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E43039FE2CD8C574E48D0C3 /* TimeFormatterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8F5C54B50926F34FACE5086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C3FC79D5CC53D877A82AFFB /* Calodoro */;
+			targetProxy = E86D4836179A5FD48540C43C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17919B25388E1986DF250AE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calodoro/Calodoro.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Calodoro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calodoro.app;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Debug;
+		};
+		2489510EFE21FD33A2417454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Calodoro/Calodoro.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Calodoro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calodoro.app;
+				SDKROOT = macosx;
+				SWIFT_STRICT_CONCURRENCY = complete;
+			};
+			name = Release;
+		};
+		88A102602E7B88FC5582507A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/CalodoroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calodoro.CalodoroTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calodoro.app/Contents/MacOS/Calodoro";
+			};
+			name = Release;
+		};
+		A67D4D61F5EA22F08E8D703C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/CalodoroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.calodoro.CalodoroTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Calodoro.app/Contents/MacOS/Calodoro";
+			};
+			name = Debug;
+		};
+		B8BE4949170E81702B9F11B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		C373FF4A4325093A9E1B8652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		66B8476D2716EFC5905FAC5B /* Build configuration list for PBXProject "Calodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BE4949170E81702B9F11B4 /* Debug */,
+				C373FF4A4325093A9E1B8652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8951D653C07093D3A8F68774 /* Build configuration list for PBXNativeTarget "CalodoroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A67D4D61F5EA22F08E8D703C /* Debug */,
+				88A102602E7B88FC5582507A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EF7131575AE928989106325E /* Build configuration list for PBXNativeTarget "Calodoro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17919B25388E1986DF250AE7 /* Debug */,
+				2489510EFE21FD33A2417454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9D058EC2810656B5BA92D93 /* Project object */;
+}
